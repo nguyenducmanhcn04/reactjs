@@ -1,7 +1,7 @@
 const TodoData = (props) => {
   //   console.log(props);
   const { todoList } = props;
-  console.log("check >>> ", todoList);
+
   return (
     <div className="todo-data">
       {todoList.map((item, index) => {
@@ -12,7 +12,6 @@ const TodoData = (props) => {
           </div>
         );
       })}
-      <div>{JSON.stringify(props.todoList)}</div>
     </div>
   );
 };
